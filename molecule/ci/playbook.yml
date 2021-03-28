@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  become: True
+  vars:
+    timezone_name: "Europe/Paris"
+  roles:
+    - role: role-timezone

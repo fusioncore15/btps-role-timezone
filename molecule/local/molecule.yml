@@ -1,0 +1,24 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: vagrant
+  provider:
+    name: virtualbox
+lint:
+  name: yamllint
+platforms:
+  - name: debian-stretch
+    box: debian/stretch64
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+  inventory:
+    group_vars: []
+scenario:
+  name: local
+verifier:
+  name: testinfra
+  lint:
+    name: flake8

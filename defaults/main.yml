@@ -1,0 +1,3 @@
+---
+# Timezone name - Default value is UTC
+timezone_name: "Etc/UTC"
